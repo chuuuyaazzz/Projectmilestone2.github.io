@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Small Step Against World Hunger - About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        #main-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0 0 0;
+        }
+
+        #main-nav ul li a {
+            text-decoration: none;
+            color: white;
+            background: #555;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        #main-nav ul li a:hover {
+            background: #333;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #000000;
+        }
+
+        /* General img rule (kept minimal) */
+        img {
+            border-radius: 8px;
+            margin: 10px 0;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer img {
+            border-radius: 50%;
+        }
+
+        /* ----- NEW: Founder layout ----- */
+        #founder .founder-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 10px;
+            /* allow wrapping on very small screens */
+            flex-wrap: wrap;
+        }
+
+        /* keep the image a fixed visual size but responsive */
+        #founder .founder-container img {
+            flex: 0 0 200px; /* fixed width box */
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0; /* remove double margins with container */
+        }
+
+        /* text column grows to fill remaining space */
+        #founder .founder-text {
+            flex: 1 1 300px;
+            min-width: 200px;
+        }
+
+        /* on small screens stack vertically and center */
+        @media (max-width: 600px) {
+            #founder .founder-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #founder .founder-text {
+                text-align: left; /* you can switch to center if you prefer */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="site-header">
+        <h1>One Small Step Against World Hunger</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background -->
+    <section id="background">
+        <h2>Background</h2>
+        <p>
+            <strong>One Small Step Against World Hunger</strong> is not yet an official organization—but it is a vision. <br>
+            It started with one student who saw how many children, especially in public schools and orphanages, 
+            struggle with hunger and malnutrition. <br>
+            Many arrive in classrooms without enough food to fuel their minds and bodies, making it harder for them to learn and thrive.
+        </p>
+        <p>
+            This website was created as a platform to share that vision globally: <br>
+            to inspire others to take part in the fight against hunger, whether in small communities or on a larger scale. <br>
+            The dream is simple: provide food to underweight students in public schools, extend help to orphanages, 
+            and encourage compassion wherever hunger exists.
+        </p>
+    </section>
+
+    <!-- Founder Info (image + text side-by-side) -->
+    <section id="founder">
+        <h2>Who is Behind This?</h2>
+
+        <!-- .founder-container holds image + text side-by-side -->
+        <div class="founder-container">
+            <!-- Replace the image filename with your image path -->
+            <img src="Briz_Aesia.PNG" alt="Founder Picture">
+
+            <!-- text column -->
+            <div class="founder-text">
+                <p>
+                    My name is <strong>Aesia Briz</strong>, and I’m a student of Philippine Science High School – Southern Mindanao Campus. <br>
+                    Right now, I am only one person with a plan, but I believe change often begins this way—one step, one voice, one idea. <br>
+                    Through this website, I want to encourage others who share the same vision to take their own steps 
+                    in addressing hunger where they are. <br>
+                    Together, these small actions can lead to something greater.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Links -->
+    <section id="related-links">
+        <h2>Why This Matters</h2>
+        <p>
+            Hunger is not just a statistic—it’s a daily reality. <br>
+            Around the world, <strong>828 million people</strong> go to bed hungry, and in the Philippines, 
+            <strong>nearly 3 out of 10 children</strong> suffer from undernutrition. <br>
+            These numbers highlight why even small initiatives can make a huge difference.
+        </p>
+        <ul>
+            <li><a href="https://www.un.org/en/observances/world-food-day" target="_blank">UN World Food Day</a></li>
+            <li><a href="https://www.wfp.org/" target="_blank">World Food Programme</a></li>
+            <li><a href="https://www.fao.org/home/en" target="_blank">Food and Agriculture Organization (FAO)</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📍 Location: Davao City, Philippines</p>
+        <p>📧 Email: <a href="mailto:aesia.briz@smc.pshs.edu.ph">aesia.briz@smc.pshs.edu.ph</a></p>
+    </section>
+
+    <!-- Call to Action -->
+    <footer id="cta">
+        <h2>JOIN THE MISSION</h2>
+        <p>Even the smallest step can spark change. <br> Will you take yours?</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-top:10px;">
+            <img src="logo.jpg" alt="One Small Step Against World Hunger" width="80">
+            <p><strong>One Small Step Against World Hunger</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
